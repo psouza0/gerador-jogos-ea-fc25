@@ -59,6 +59,14 @@
             font-weight: bold;
             border-radius: 5px;
         }
+
+        .stats-title {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+        color: #fff;
+        line-height: 1.2; /* Ajusta o espaçamento entre as linhas */
+        text-align: center; /* Garante que o texto fique centralizado */
+        }
     </style>
 </head>
 <body>
@@ -74,17 +82,27 @@
                     <p>{{ team1.country }}</p>
                     <div class="stats-container">
                         {% if team1.Overall %}
-                        <div class="stats-box">{{ team1.Overall }}</div>
+                        <div class="stats-box-wrapper">
+                            <div class="stats-title">Overall</div>
+                            <div class="stats-box">{{ team1.Overall }}</div>
+                        </div>
                         {% endif %}
                         {% if team1.Ataque %}
-                        <div class="stats-box">{{ team1.Ataque }}</div>
+                        <div class="stats-box-wrapper">
+                            <div class="stats-title">Ataque</div>
+                            <div class="stats-box">{{ team1.Ataque }}</div>
+                        </div>
                         {% endif %}
                         {% if team1['Meio-campo'] %}
-                        <div class="stats-box">{{ team1['Meio-campo'] }}</div>
-                        {% endif %}
+                        <div class="stats-box-wrapper">
+                            <div class="stats-title">Meio-campo</div>
+                            <div class="stats-box">{{ team1['Meio-campo'] }}</div>
+                        </div>                        {% endif %}
                         {% if team1.Defesa %}
-                        <div class="stats-box">{{ team1.Defesa }}</div>
-                        {% endif %}
+                        <div class="stats-box-wrapper">
+                            <div class="stats-title">Defesa</div>
+                            <div class="stats-box">{{ team2.Defesa }}</div>
+                        </div>                     {% endif %}
                     </div>
                 </div>
             </div>
@@ -97,17 +115,25 @@
                     <p>{{ team2.country }}</p>
                     <div class="stats-container">
                         {% if team2.Overall %}
-                        <div class="stats-box">{{ team2.Overall }}</div>
-                        {% endif %}
+                        <div class="stats-box-wrapper">
+                            <div class="stats-title">Overall</div>
+                            <div class="stats-box">{{ team2.Overall }}</div>
+                        </div>                        {% endif %}
                         {% if team2.Ataque %}
-                        <div class="stats-box">{{ team2.Ataque }}</div>
-                        {% endif %}
+                        <div class="stats-box-wrapper">
+                            <div class="stats-title">Ataque</div>
+                            <div class="stats-box">{{ team2.Ataque }}</div>
+                        </div>                        {% endif %}
                         {% if team2['Meio-campo'] %}
-                        <div class="stats-box">{{ team2['Meio-campo'] }}</div>
-                        {% endif %}
+                        <div class="stats-box-wrapper">
+                            <div class="stats-title">Meio-campo</div>
+                            <div class="stats-box">{{ team2['Meio-campo'] }}</div>
+                        </div>                        {% endif %}
                         {% if team2.Defesa %}
-                        <div class="stats-box">{{ team2.Defesa }}</div>
-                        {% endif %}
+                        <div class="stats-box-wrapper">
+                            <div class="stats-title">Defesa</div>
+                            <div class="stats-box">{{ team2.Defesa }}</div>
+                        </div>                        {% endif %}
                     </div>
                 </div>
             </div>
