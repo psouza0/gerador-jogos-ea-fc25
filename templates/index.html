@@ -41,28 +41,77 @@
             font-size: 0.9rem;
             color: #555;
         }
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+
+        .stats-box {
+            background-color: #28a745; /* Verde */
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
     <div class="container text-center py-5">
 <!-- <h1 class="mb-4">Gerador de Partidas de Futebol</h1> -->
         <div class="row justify-content-center mb-4">
+            
             <!-- Time 1 -->
             <div class="col-md-4">
                 <div class="team-card">
                     <img src="{{ url_for('static', filename=team1['image'].split('/')[-1]) }}" alt="{{ team1.team }}">
                     <h5>{{ team1.team }}</h5>
-                    <p>{{ team1.country }} - {{ team1.overall }} Overall</p>
+                    <p>{{ team1.country }}</p>
+                    <div class="stats-container">
+                        {% if team1.Overall %}
+                        <div class="stats-box">{{ team1.Overall }}</div>
+                        {% endif %}
+                        {% if team1.Ataque %}
+                        <div class="stats-box">{{ team1.Ataque }}</div>
+                        {% endif %}
+                        {% if team1['Meio-campo'] %}
+                        <div class="stats-box">{{ team1['Meio-campo'] }}</div>
+                        {% endif %}
+                        {% if team1.Defesa %}
+                        <div class="stats-box">{{ team1.Defesa }}</div>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
+
             <!-- Time 2 -->
             <div class="col-md-4">
                 <div class="team-card">
                     <img src="{{ url_for('static', filename=team2['image'].split('/')[-1]) }}" alt="{{ team2.team }}">
                     <h5>{{ team2.team }}</h5>
-                    <p>{{ team2.country }} - {{ team2.overall }} Overall</p>
+                    <p>{{ team2.country }}</p>
+                    <div class="stats-container">
+                        {% if team2.Overall %}
+                        <div class="stats-box">{{ team2.Overall }}</div>
+                        {% endif %}
+                        {% if team2.Ataque %}
+                        <div class="stats-box">{{ team2.Ataque }}</div>
+                        {% endif %}
+                        {% if team2['Meio-campo'] %}
+                        <div class="stats-box">{{ team2['Meio-campo'] }}</div>
+                        {% endif %}
+                        {% if team2.Defesa %}
+                        <div class="stats-box">{{ team2.Defesa }}</div>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
+
         </div>
         <button class="btn btn-primary" onclick="window.location.reload();">Gerar Nova Partida</button>
     </div>

@@ -10,55 +10,55 @@ app = Flask(__name__)
 data = [
 
 #la liga
-    {"team": "Real Madrid", "country": "Spain", "overall": 86, "image": "imagens/real-madrid.png"},
-    {"team": "Barcelona", "country": "Spain", "overall": 83, "image": "imagens/barcelona.png"},
-    {"team": "Atletico Madrid", "country": "Spain", "overall": 82, "image": "imagens/atletico-de-madrid.png"},
-    {"team": "Athletic Club Bilbao", "country": "Spain", "overall": 80, "image": "imagens/athletic-club-bilbao.png"},
-    {"team": "Girona FC", "country": "Spain", "overall": 79, "image": "imagens/girona.png"},
+    {"team": "Real Madrid", "country": "Espanha - La Liga", "Overall": 86, "Ataque": "88", "Meio-campo": "85", "Defesa": "84", "image": "imagens/real-madrid.png"},
+    {"team": "Barcelona", "country": "Espanha - La Liga", "Overall": 83, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/barcelona.png"},
+    {"team": "Atletico Madrid", "country": "Espanha - La Liga", "Overall": 82, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/atletico-de-madrid.png"},
+    {"team": "Athletic Club Bilbao", "country": "Espanha - La Liga", "Overall": 80, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/athletic-club-bilbao.png"},
+    {"team": "Girona FC", "country": "Espanha - La Liga", "Overall": 79, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/girona.png"},
 
 #premier league
-    {"team": "Newcastle", "country": "England", "overall": 80, "image": "imagens/newcastle.png"},
-    {"team": "Tottenham", "country": "England", "overall": 81, "image": "imagens/tottenham.png"},
-    {"team": "Arsenal", "country": "England", "overall": 84, "image": "imagens/arsenal.png"},
-    {"team": "West Ham", "country": "England", "overall": 79, "image": "imagens/west-ham.png"},
-    {"team": "Manchester United", "country": "England", "overall": 80, "image": "imagens/manchester-united.png"},
-    {"team": "Chelsea", "country": "England", "overall": 81, "image": "imagens/chelsea.png"},
-    {"team": "Manchester City", "country": "England", "overall": 85, "image": "imagens/manchester-city.png"},
-    {"team": "Liverpool", "country": "England", "overall": 84, "image": "imagens/liverpool.png"},
-    {"team": "Aston Villa", "country": "England", "overall": 80, "image": "imagens/aston-villa.png"},
+    {"team": "Newcastle", "country": "Inglaterra - Premier League", "Overall": 80, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/newcastle.png"},
+    {"team": "Tottenham", "country": "Inglaterra - Premier League", "Overall": 81, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/tottenham.png"},
+    {"team": "Arsenal", "country": "Inglaterra - Premier League", "Overall": 84, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/arsenal.png"},
+    {"team": "West Ham", "country": "Inglaterra - Premier League", "Overall": 79, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/west-ham.png"},
+    {"team": "Manchester United", "country": "Inglaterra - Premier League", "Overall": 80, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/manchester-united.png"},
+    {"team": "Chelsea", "country": "Inglaterra - Premier League", "Overall": 81, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/chelsea.png"},
+    {"team": "Manchester City", "country": "Inglaterra - Premier League", "Overall": 85, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/manchester-city.png"},
+    {"team": "Liverpool", "country": "Inglaterra - Premier League", "Overall": 84, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/liverpool.png"},
+    {"team": "Aston Villa", "country": "Inglaterra - Premier League", "Overall": 80, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/aston-villa.png"},
 
 #seria a italia
-    {"team": "Atalanta", "country": "Italy", "overall": 79, "image": "imagens/atalanta.png"},
-    {"team": "Lazio", "country": "Italy", "overall": 79, "image": "imagens/lazio.png"},
-    {"team": "Napoli", "country": "Italy", "overall": 79, "image": "imagens/napoli.png"},
-    {"team": "Milano (AC Milan)", "country": "Italy", "overall": 81, "image": "imagens/milano.png"},
-    {"team": "Juventus", "country": "Italy", "overall": 80, "image": "imagens/juventus.png"},
-    {"team": "Roma", "country": "Italy", "overall": 80, "image": "imagens/roma.png"},
-    {"team": "Lombardia FC (Inter)", "country": "Italy", "overall": 83, "image": "imagens/inter.png"},
+    {"team": "Atalanta", "country": "Itália - Serie A", "Overall": 79, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/atalanta.png"},
+    {"team": "Lazio", "country": "Itália - Serie A", "Overall": 79, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/lazio.png"},
+    {"team": "Napoli", "country": "Itália - Serie A", "Overall": 79, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/napoli.png"},
+    {"team": "Milano (AC Milan)", "country": "Itália - Serie A", "Overall": 81, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/milano.png"},
+    {"team": "Juventus", "country": "Itália - Serie A", "Overall": 80, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/juventus.png"},
+    {"team": "Roma", "country": "Itália - Serie A", "Overall": 80, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/roma.png"},
+    {"team": "Lombardia FC (Inter)", "country": "Itália - Serie A", "Overall": 83, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/inter.png"},
 
 #bundesliga
-    {"team": "FC Bayern München", "country": "Germany", "overall": 84, "image": "imagens/fc-bayern mnchen.png"},
-    {"team": "Bayer 04 Leverkusen", "country": "Germany", "overall": 83, "image": "imagens/leverkusen.png"},
-    {"team": "Borussia Dortmund", "country": "Germany", "overall": 81, "image": "imagens/borussia-dortmund.png"},
-    {"team": "RB Leipzig", "country": "Germany", "overall": 80, "image": "imagens/rb-leipzig.png"},
+    {"team": "FC Bayern München", "country": "Alemanha - Bundesliga", "Overall": 84, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/fc-bayern mnchen.png"},
+    {"team": "Bayer 04 Leverkusen", "country": "Alemanha - Bundesliga", "Overall": 83, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/leverkusen.png"},
+    {"team": "Borussia Dortmund", "country": "Alemanha - Bundesliga", "Overall": 81, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/borussia-dortmund.png"},
+    {"team": "RB Leipzig", "country": "Alemanha - Bundesliga", "Overall": 80, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/rb-leipzig.png"},
     
 
 #outros
-    {"team": "Galatasaray SK", "country": "Turkey", "overall": 79, "image": "imagens/galatasaray.png"},
-    {"team": "Fenerbahçe SK", "country": "Turkey", "overall": 79, "image": "imagens/fenerbahce.png"},
-    {"team": "Paris Saint-Germain", "country": "France", "overall": 82, "image": "imagens/psg.png"},
+    {"team": "Galatasaray SK", "country": "Turquia", "Overall": 79, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/galatasaray.png"},
+    {"team": "Fenerbahçe SK", "country": "Turquia", "Overall": 79, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/fenerbahce.png"},
+    {"team": "Paris Saint-Germain", "country": "França - Liga 1", "Overall": 82, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/psg.png"},
 
 #seleções
-    {"team": "França", "country": "", "overall": 85, "image": "imagens/franca.png"},
-    {"team": "Inglaterra", "country": "", "overall": 84, "image": "imagens/inglaterra.png"},
-    {"team": "Alemanha", "country": "", "overall": 84, "image": "imagens/alemanha.png"},
-    {"team": "Portugal", "country": "", "overall": 84, "image": "imagens/portugal.png"},
-    {"team": "Espanha", "country": "", "overall": 84, "image": "imagens/espanha.png"},
-    {"team": "Netherlands", "country": "", "overall": 83, "image": "imagens/netherlands.png"},
-    {"team": "Argentina", "country": "", "overall": 83, "image": "imagens/argentina.png"},
+    {"team": "França", "country": "Seleção", "Overall": 85, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/franca.png"},
+    {"team": "Inglaterra", "country": "Seleção", "Overall": 84, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/inglaterra.png"},
+    {"team": "Alemanha", "country": "Seleção", "Overall": 84, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/alemanha.png"},
+    {"team": "Portugal", "country": "Seleção", "Overall": 84, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/portugal.png"},
+    {"team": "Espanha", "country": "Seleção", "Overall": 84, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/espanha.png"},
+    {"team": "Netherlands", "country": "Seleção", "Overall": 83, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/netherlands.png"},
+    {"team": "Argentina", "country": "Seleção", "Overall": 83, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/argentina.png"},
 
 
-    {"team": "Itália", "country": "", "overall": 82, "image": "imagens/italia.png"}
+    {"team": "Itália", "country": "", "Overall": 82, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/italia.png"}
 
 ]
 
@@ -70,14 +70,14 @@ recent_matches = deque(maxlen=5)  # Armazena até 5 partidas recentes
 
 # Rota principal
 def generate_match():
-    filtered_teams = df[df['overall'] >= 79]  # Filtrar times com overall >= 79
+    filtered_teams = df[df['Overall'] >= 79]  # Filtrar times com Overall >= 79
     while True:
         match = filtered_teams.sample(n=2)  # Selecionar 2 times aleatórios
         team1, team2 = match.iloc[0], match.iloc[1]
         match_tuple = frozenset([team1['team'], team2['team']])  # Representação única para o par de times
 
-        # Verificar diferença máxima de overall e se a partida já ocorreu recentemente
-        if abs(team1['overall'] - team2['overall']) <= 3 and match_tuple not in recent_matches:
+        # Verificar diferença máxima de Overall e se a partida já ocorreu recentemente
+        if abs(team1['Overall'] - team2['Overall']) <= 3 and match_tuple not in recent_matches:
             recent_matches.append(match_tuple)  # Adicionar ao histórico de partidas recentes
             break
     return team1.to_dict(), team2.to_dict()
