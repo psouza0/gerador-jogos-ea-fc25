@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 # Criar banco de dados básico com times e suas estrelas
 data = [
-    
+
 #la liga
     {"team": "Real Madrid", "country": "Spain", "overall": 86, "image": "imagens/real-madrid.png"},
     {"team": "Barcelona", "country": "Spain", "overall": 83, "image": "imagens/barcelona.png"},
@@ -18,34 +18,49 @@ data = [
     {"team": "Girona FC", "country": "Spain", "overall": 79, "image": "imagens/girona.png"},
 
 #premier league
-    {"team": "Newcastle", "country": "England", "overall": 4.5, "image": "imagens/newcastle.png"},
-    {"team": "Tottenham", "country": "England", "overall": 4.5, "image": "imagens/tottenham.png"},
-    {"team": "Arsenal", "country": "England", "overall": 5, "image": "imagens/arsenal.png"},
-    {"team": "West Ham", "country": "England", "overall": 4.5, "image": "imagens/west-ham.png"},
-    {"team": "Manchester United", "country": "England", "overall": 5, "image": "imagens/manchester_united.png"},
+    {"team": "Newcastle", "country": "England", "overall": 80, "image": "imagens/newcastle.png"},
+    {"team": "Tottenham", "country": "England", "overall": 81, "image": "imagens/tottenham.png"},
+    {"team": "Arsenal", "country": "England", "overall": 84, "image": "imagens/arsenal.png"},
+    {"team": "West Ham", "country": "England", "overall": 79, "image": "imagens/west-ham.png"},
+    {"team": "Manchester United", "country": "England", "overall": 80, "image": "imagens/manchester-united.png"},
+    {"team": "Chelsea", "country": "England", "overall": 81, "image": "imagens/chelsea.png"},
+    {"team": "Manchester City", "country": "England", "overall": 85, "image": "imagens/manchester-city.png"},
+    {"team": "Liverpool", "country": "England", "overall": 84, "image": "imagens/liverpool.png"},
+    {"team": "Aston Villa", "country": "England", "overall": 80, "image": "imagens/aston-villa.png"},
 
+#seria a italia
+    {"team": "Atalanta", "country": "Italy", "overall": 79, "image": "imagens/atalanta.png"},
+    {"team": "Lazio", "country": "Italy", "overall": 79, "image": "imagens/lazio.png"},
+    {"team": "Napoli", "country": "Italy", "overall": 79, "image": "imagens/napoli.png"},
+    {"team": "Milano (AC Milan)", "country": "Italy", "overall": 81, "image": "imagens/milano.png"},
+    {"team": "Juventus", "country": "Italy", "overall": 80, "image": "imagens/juventus.png"},
+    {"team": "Roma", "country": "Italy", "overall": 80, "image": "imagens/roma.png"},
+    {"team": "Lombardia FC (Inter)", "country": "Italy", "overall": 83, "image": "imagens/inter.png"},
 
-    {"team": "Chelsea", "country": "England", "overall": 4.5, "image": "imagens/chelsea.png"},
-    {"team": "Manchester City", "country": "England", "overall": 5, "image": "imagens/manchester-city.png"},
-    {"team": "Liverpool", "country": "England", "overall": 4.5, "image": "imagens/liverpool.png"},
+#bundesliga
+    {"team": "FC Bayern München", "country": "Germany", "overall": 84, "image": "imagens/fc-bayern mnchen.png"},
+    {"team": "Bayer 04 Leverkusen", "country": "Germany", "overall": 83, "image": "imagens/leverkusen.png"},
+    {"team": "Borussia Dortmund", "country": "Germany", "overall": 83, "image": "imagens/borussia-dortmund.png"},
+    {"team": "RB Leipzig", "country": "Germany", "overall": 83, "image": "imagens/rb-leipzig.png"},
     
-    
-    
-    
-    {"team": "Aston Villa", "country": "England", "overall": 5, "image": "imagens/aston-villa.png"},
-    
-
-   
 
 #outros
-    {"team": "Bayern Munich", "country": "Germany", "overall": 5, "image": "imagens/bayern_munich.png"},
+    {"team": "Galatasaray SK", "country": "Turkey", "overall": 83, "image": "imagens/galatasaray.png"},
+    {"team": "Fenerbahçe SK", "country": "Turkey", "overall": 83, "image": "imagens/fenerbahce.png"},
+    {"team": "Paris Saint-Germain", "country": "France", "overall": 82, "image": "imagens/psg.png"},
 
-    {"team": "Paris Saint-Germain", "country": "France", "overall": 5, "image": "imagens/paris_saint_germain.png"},
-    
-    
-    {"team": "Juventus", "country": "Italy", "overall": 4.5, "image": "imagens/juventus.png"},
-    
-    {"team": "AC Milan", "country": "Italy", "overall": 4, "image": "imagens/ac_milan.png"}
+#seleções
+    {"team": "França", "country": " ", "overall": 85, "image": "imagens/franca.png"},
+    {"team": "Inglaterra", "country": " ", "overall": 84, "image": "imagens/inglaterra.png"},
+    {"team": "Alemanha", "country": " ", "overall": 84, "image": "imagens/alemanha.png"},
+    {"team": "Portugal", "country": " ", "overall": 84, "image": "imagens/portugal.png"},
+    {"team": "Espanha", "country": " ", "overall": 84, "image": "imagens/espanha.png"},
+    {"team": "Netherlands", "country": " ", "overall": 83, "image": "imagens/netherlands.png"},
+    {"team": "Argentina", "country": " ", "overall": 83, "image": "imagens/argentina.png"},
+
+
+    {"team": "Itália", "country": "", "overall": 82, "image": "imagens/italia.png"}
+
 ]
 
 # Converter para DataFrame para facilitar a manipulação
@@ -63,7 +78,7 @@ def generate_match():
         match_tuple = frozenset([team1['team'], team2['team']])  # Representação única para o par de times
 
         # Verificar diferença máxima de overall e se a partida já ocorreu recentemente
-        if abs(team1['overall'] - team2['overall']) <= 2 and match_tuple not in recent_matches:
+        if abs(team1['overall'] - team2['overall']) <= 3 and match_tuple not in recent_matches:
             recent_matches.append(match_tuple)  # Adicionar ao histórico de partidas recentes
             break
     return team1.to_dict(), team2.to_dict()
