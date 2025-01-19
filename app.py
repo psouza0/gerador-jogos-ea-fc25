@@ -3,7 +3,6 @@ import pandas as pd
 import random
 from collections import deque
 
-
 # Configuração do Flask
 app = Flask(__name__)
 
@@ -40,23 +39,23 @@ data = [
 #bundesliga
     {"team": "FC Bayern München", "country": "Germany", "overall": 84, "image": "imagens/fc-bayern mnchen.png"},
     {"team": "Bayer 04 Leverkusen", "country": "Germany", "overall": 83, "image": "imagens/leverkusen.png"},
-    {"team": "Borussia Dortmund", "country": "Germany", "overall": 83, "image": "imagens/borussia-dortmund.png"},
-    {"team": "RB Leipzig", "country": "Germany", "overall": 83, "image": "imagens/rb-leipzig.png"},
+    {"team": "Borussia Dortmund", "country": "Germany", "overall": 81, "image": "imagens/borussia-dortmund.png"},
+    {"team": "RB Leipzig", "country": "Germany", "overall": 80, "image": "imagens/rb-leipzig.png"},
     
 
 #outros
-    {"team": "Galatasaray SK", "country": "Turkey", "overall": 83, "image": "imagens/galatasaray.png"},
-    {"team": "Fenerbahçe SK", "country": "Turkey", "overall": 83, "image": "imagens/fenerbahce.png"},
+    {"team": "Galatasaray SK", "country": "Turkey", "overall": 79, "image": "imagens/galatasaray.png"},
+    {"team": "Fenerbahçe SK", "country": "Turkey", "overall": 79, "image": "imagens/fenerbahce.png"},
     {"team": "Paris Saint-Germain", "country": "France", "overall": 82, "image": "imagens/psg.png"},
 
 #seleções
-    {"team": "França", "country": " ", "overall": 85, "image": "imagens/franca.png"},
-    {"team": "Inglaterra", "country": " ", "overall": 84, "image": "imagens/inglaterra.png"},
-    {"team": "Alemanha", "country": " ", "overall": 84, "image": "imagens/alemanha.png"},
-    {"team": "Portugal", "country": " ", "overall": 84, "image": "imagens/portugal.png"},
-    {"team": "Espanha", "country": " ", "overall": 84, "image": "imagens/espanha.png"},
-    {"team": "Netherlands", "country": " ", "overall": 83, "image": "imagens/netherlands.png"},
-    {"team": "Argentina", "country": " ", "overall": 83, "image": "imagens/argentina.png"},
+    {"team": "França", "country": "", "overall": 85, "image": "imagens/franca.png"},
+    {"team": "Inglaterra", "country": "", "overall": 84, "image": "imagens/inglaterra.png"},
+    {"team": "Alemanha", "country": "", "overall": 84, "image": "imagens/alemanha.png"},
+    {"team": "Portugal", "country": "", "overall": 84, "image": "imagens/portugal.png"},
+    {"team": "Espanha", "country": "", "overall": 84, "image": "imagens/espanha.png"},
+    {"team": "Netherlands", "country": "", "overall": 83, "image": "imagens/netherlands.png"},
+    {"team": "Argentina", "country": "", "overall": 83, "image": "imagens/argentina.png"},
 
 
     {"team": "Itália", "country": "", "overall": 82, "image": "imagens/italia.png"}
