@@ -29,6 +29,18 @@
             text-align: center;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
+
+/*FUNDO TRANSPARENTE
+.team-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background: transparent; /* Fundo completamente transparente 
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+*/       
         .team-card img {
             max-width: 100px;
             margin-bottom: 10px;
@@ -83,25 +95,25 @@
                     <div class="stats-container">
                         {% if team1.Overall %}
                         <div class="stats-box-wrapper">
-                            <div class="stats-title">Overall</div>
+                            <div class="stats-title">OVR</div>
                             <div class="stats-box">{{ team1.Overall }}</div>
                         </div>
                         {% endif %}
                         {% if team1.Ataque %}
                         <div class="stats-box-wrapper">
-                            <div class="stats-title">Ataque</div>
+                            <div class="stats-title">ATA</div>
                             <div class="stats-box">{{ team1.Ataque }}</div>
                         </div>
                         {% endif %}
                         {% if team1['Meio-campo'] %}
                         <div class="stats-box-wrapper">
-                            <div class="stats-title">Meio-campo</div>
+                            <div class="stats-title">MEI</div>
                             <div class="stats-box">{{ team1['Meio-campo'] }}</div>
                         </div>                        {% endif %}
                         {% if team1.Defesa %}
                         <div class="stats-box-wrapper">
-                            <div class="stats-title">Defesa</div>
-                            <div class="stats-box">{{ team2.Defesa }}</div>
+                            <div class="stats-title">DEF</div>
+                            <div class="stats-box">{{ team1.Defesa }}</div>
                         </div>                     {% endif %}
                     </div>
                 </div>
@@ -116,22 +128,22 @@
                     <div class="stats-container">
                         {% if team2.Overall %}
                         <div class="stats-box-wrapper">
-                            <div class="stats-title">Overall</div>
+                            <div class="stats-title">OVR</div>
                             <div class="stats-box">{{ team2.Overall }}</div>
                         </div>                        {% endif %}
                         {% if team2.Ataque %}
                         <div class="stats-box-wrapper">
-                            <div class="stats-title">Ataque</div>
+                            <div class="stats-title">ATA</div>
                             <div class="stats-box">{{ team2.Ataque }}</div>
                         </div>                        {% endif %}
                         {% if team2['Meio-campo'] %}
                         <div class="stats-box-wrapper">
-                            <div class="stats-title">Meio-campo</div>
+                            <div class="stats-title">MEI</div>
                             <div class="stats-box">{{ team2['Meio-campo'] }}</div>
                         </div>                        {% endif %}
                         {% if team2.Defesa %}
                         <div class="stats-box-wrapper">
-                            <div class="stats-title">Defesa</div>
+                            <div class="stats-title">DEF</div>
                             <div class="stats-box">{{ team2.Defesa }}</div>
                         </div>                        {% endif %}
                     </div>

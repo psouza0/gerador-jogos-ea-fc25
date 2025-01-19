@@ -10,22 +10,22 @@ app = Flask(__name__)
 data = [
 
 #la liga
-    {"team": "Real Madrid", "country": "Espanha - La Liga",             "Overall": 86, "Ataque": "88", "Meio-campo": "85", "Defesa": "84", "image": "imagens/real-madrid.png"},
+    {"team": "Real Madrid", "country": "Espanha - La Liga",             "Overall": 86, "Ataque": "88", "Meio-campo": "85", "Defesa": 84, "image": "imagens/real-madrid.png"},
     {"team": "Barcelona", "country": "Espanha - La Liga",               "Overall": 83, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/barcelona.png"},
     {"team": "Atletico Madrid", "country": "Espanha - La Liga",         "Overall": 82, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/atletico-de-madrid.png"},
     {"team": "Athletic Club Bilbao", "country": "Espanha - La Liga",    "Overall": 80, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/athletic-club-bilbao.png"},
     {"team": "Girona FC", "country": "Espanha - La Liga",               "Overall": 79, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/girona.png"},
 
 #premier league
-    {"team": "Newcastle", "country": "Inglaterra - Premier League",         "Overall": 80, "Ataque": "80", "Meio-campo": "84", "Defesa": "79", "image": "imagens/newcastle.png"},
-    {"team": "Tottenham", "country": "Inglaterra - Premier League",         "Overall": 81, "Ataque": "81", "Meio-campo": "82", "Defesa": "80", "image": "imagens/tottenham.png"},
-    {"team": "Arsenal", "country": "Inglaterra - Premier League",           "Overall": 84, "Ataque": "83", "Meio-campo": "85", "Defesa": "83", "image": "imagens/arsenal.png"},
-    {"team": "West Ham", "country": "Inglaterra - Premier League",          "Overall": 79, "Ataque": "81", "Meio-campo": "79", "Defesa": "78", "image": "imagens/west-ham.png"},
-    {"team": "Manchester United", "country": "Inglaterra - Premier League", "Overall": 80, "Ataque": "80", "Meio-campo": "80", "Defesa": "81", "image": "imagens/manchester-united.png"},
-    {"team": "Chelsea", "country": "Inglaterra - Premier League",           "Overall": 81, "Ataque": "81", "Meio-campo": "82", "Defesa": "79", "image": "imagens/chelsea.png"},
-    {"team": "Manchester City", "country": "Inglaterra - Premier League",   "Overall": 85, "Ataque": "84", "Meio-campo": "86", "Defesa": "83", "image": "imagens/manchester-city.png"},
-    {"team": "Liverpool", "country": "Inglaterra - Premier League",         "Overall": 84, "Ataque": "84", "Meio-campo": "84", "Defesa": "84", "image": "imagens/liverpool.png"},
-    {"team": "Aston Villa", "country": "Inglaterra - Premier League",       "Overall": 80, "Ataque": "84", "Meio-campo": "80", "Defesa": "79", "image": "imagens/aston-villa.png"},
+    {"team": "Newcastle", "country": "Inglaterra - Premier League",         "Overall": 80, "Ataque": 81, "Meio-campo": 82, "Defesa": 79, "image": "imagens/newcastle.png"},
+    {"team": "Tottenham", "country": "Inglaterra - Premier League",         "Overall": 81, "Ataque": 82, "Meio-campo": 80, "Defesa": 78, "image": "imagens/tottenham.png"},
+    {"team": "Arsenal", "country": "Inglaterra - Premier League",           "Overall": 84, "Ataque": 84, "Meio-campo": 85, "Defesa": 82, "image": "imagens/arsenal.png"},
+    {"team": "West Ham", "country": "Inglaterra - Premier League",          "Overall": 79, "Ataque": 81, "Meio-campo": 79, "Defesa": 78, "image": "imagens/west-ham.png"},
+    {"team": "Manchester United", "country": "Inglaterra - Premier League", "Overall": 80, "Ataque": 80, "Meio-campo": 80, "Defesa": 81, "image": "imagens/manchester-united.png"},
+    {"team": "Chelsea", "country": "Inglaterra - Premier League",           "Overall": 81, "Ataque": 81, "Meio-campo": 82, "Defesa": 79, "image": "imagens/chelsea.png"},
+    {"team": "Manchester City", "country": "Inglaterra - Premier League",   "Overall": 85, "Ataque": 84, "Meio-campo": 86, "Defesa": 83, "image": "imagens/manchester-city.png"},
+    {"team": "Liverpool", "country": "Inglaterra - Premier League",         "Overall": 84, "Ataque": 83, "Meio-campo": 84, "Defesa": 84, "image": "imagens/liverpool.png"},
+    {"team": "Aston Villa", "country": "Inglaterra - Premier League",       "Overall": 80, "Ataque": 84, "Meio-campo": 80, "Defesa": 79, "image": "imagens/aston-villa.png"},
 
 #seria a italia
     {"team": "Atalanta", "country": "Itália - Serie A",             "Overall": 79, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/atalanta.png"},
