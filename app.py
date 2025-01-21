@@ -69,7 +69,7 @@ def generate_match():
         match = filtered_teams.sample(n=2)  
         team1, team2 = match.iloc[0], match.iloc[1]
         match_tuple = frozenset([team1['team'], team2['team']])  
-        if abs(team1['Overall'] - team2['Overall']) <= 3 and match_tuple not in recent_matches:
+        if abs(team1['Overall'] - team2['Overall']) <= 2 and match_tuple not in recent_matches:
             recent_matches.append(match_tuple) 
             break
     return team1.to_dict(), team2.to_dict()
