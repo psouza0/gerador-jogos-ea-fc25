@@ -3,10 +3,8 @@ import pandas as pd
 import random
 from collections import deque
 
-# Configuração do Flask
 app = Flask(__name__)
 
-# Criar banco de dados básico com times e suas estrelas
 data = [
 
 #la liga
@@ -27,7 +25,7 @@ data = [
     {"team": "Liverpool", "country": "Inglaterra - Premier League",         "Overall": 84, "Ataque": 83, "Meio-campo": 84, "Defesa": 84, "image": "imagens/liverpool.png"},
     {"team": "Aston Villa", "country": "Inglaterra - Premier League",       "Overall": 80, "Ataque": 84, "Meio-campo": 80, "Defesa": 79, "image": "imagens/aston-villa.png"},
 
-#seria a italia
+#seria a
     {"team": "Atalanta", "country": "Itália - Serie A",             "Overall": 79, "Ataque": 78, "Meio-campo": 78, "Defesa": 78, "image": "imagens/atalanta.png"},
     {"team": "Lazio", "country": "Itália - Serie A",                "Overall": 79, "Ataque": 80, "Meio-campo": 79, "Defesa": 78, "image": "imagens/lazio.png"},
     {"team": "Napoli", "country": "Itália - Serie A",               "Overall": 79, "Ataque": 81, "Meio-campo": 79, "Defesa": 79, "image": "imagens/napoli.png"},
@@ -48,7 +46,7 @@ data = [
     {"team": "Fenerbahçe SK", "country": "Turquia",                 "Overall": 79, "Ataque": 81, "Meio-campo": 79, "Defesa": 78, "image": "imagens/fenerbahce.png"},
     {"team": "Paris Saint-Germain", "country": "França - Liga 1",   "Overall": 82, "Ataque": 81, "Meio-campo": 82, "Defesa": 83, "image": "imagens/psg.png"},
 
-#seleções
+#Internacional
     {"team": "França", "country": "Internacional",      "Overall": 85, "Ataque": 85, "Meio-campo": 84, "Defesa": 85, "image": "imagens/franca.png"},
     {"team": "Inglaterra", "country": "Internacional",  "Overall": 84, "Ataque": 87, "Meio-campo": 85, "Defesa": 82, "image": "imagens/inglaterra.png"},
     {"team": "Alemanha", "country": "Internacional",    "Overall": 84, "Ataque": 79, "Meio-campo": 83, "Defesa": 84, "image": "imagens/alemanha.png"},
@@ -62,23 +60,17 @@ data = [
 
 ]
 
-# Converter para DataFrame para facilitar a manipulação
 df = pd.DataFrame(data)
+recent_matches = deque(maxlen=5) 
 
-# Histórico de partidas recentes
-recent_matches = deque(maxlen=5)  # Armazena até 5 partidas recentes
-
-# Rota principal
 def generate_match():
-    filtered_teams = df[df['Overall'] >= 79]  # Filtrar times com Overall >= 79
+    filtered_teams = df[df['Overall'] >= 79]  
     while True:
-        match = filtered_teams.sample(n=2)  # Selecionar 2 times aleatórios
+        match = filtered_teams.sample(n=2)  
         team1, team2 = match.iloc[0], match.iloc[1]
-        match_tuple = frozenset([team1['team'], team2['team']])  # Representação única para o par de times
-
-        # Verificar diferença máxima de Overall e se a partida já ocorreu recentemente
+        match_tuple = frozenset([team1['team'], team2['team']])  
         if abs(team1['Overall'] - team2['Overall']) <= 3 and match_tuple not in recent_matches:
-            recent_matches.append(match_tuple)  # Adicionar ao histórico de partidas recentes
+            recent_matches.append(match_tuple) 
             break
     return team1.to_dict(), team2.to_dict()
 
