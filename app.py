@@ -10,11 +10,11 @@ app = Flask(__name__)
 data = [
 
 #la liga
-    {"team": "Real Madrid", "country": "Espanha - La Liga",             "Overall": 86, "Ataque": "88", "Meio-campo": "85", "Defesa": 84, "image": "imagens/real-madrid.png"},
-    {"team": "Barcelona", "country": "Espanha - La Liga",               "Overall": 83, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/barcelona.png"},
-    {"team": "Atletico Madrid", "country": "Espanha - La Liga",         "Overall": 82, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/atletico-de-madrid.png"},
-    {"team": "Athletic Club Bilbao", "country": "Espanha - La Liga",    "Overall": 80, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/athletic-club-bilbao.png"},
-    {"team": "Girona FC", "country": "Espanha - La Liga",               "Overall": 79, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/girona.png"},
+    {"team": "Real Madrid", "country": "Espanha - La Liga",             "Overall": 86, "Ataque": 88, "Meio-campo": 85, "Defesa": 84, "image": "imagens/real-madrid.png"},
+    {"team": "Barcelona", "country": "Espanha - La Liga",               "Overall": 83, "Ataque": 81, "Meio-campo": 81, "Defesa": 82, "image": "imagens/barcelona.png"},
+    {"team": "Atletico Madrid", "country": "Espanha - La Liga",         "Overall": 82, "Ataque": 84, "Meio-campo": 81, "Defesa": 81, "image": "imagens/atletico-de-madrid.png"},
+    {"team": "Athletic Club Bilbao", "country": "Espanha - La Liga",    "Overall": 80, "Ataque": 79, "Meio-campo": 80, "Defesa": 79, "image": "imagens/athletic-club-bilbao.png"},
+    {"team": "Girona FC", "country": "Espanha - La Liga",               "Overall": 79, "Ataque": 75, "Meio-campo": 79, "Defesa": 79, "image": "imagens/girona.png"},
 
 #premier league
     {"team": "Newcastle", "country": "Inglaterra - Premier League",         "Overall": 80, "Ataque": 81, "Meio-campo": 82, "Defesa": 79, "image": "imagens/newcastle.png"},
@@ -28,37 +28,37 @@ data = [
     {"team": "Aston Villa", "country": "Inglaterra - Premier League",       "Overall": 80, "Ataque": 84, "Meio-campo": 80, "Defesa": 79, "image": "imagens/aston-villa.png"},
 
 #seria a italia
-    {"team": "Atalanta", "country": "Itália - Serie A",             "Overall": 79, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/atalanta.png"},
-    {"team": "Lazio", "country": "Itália - Serie A",                "Overall": 79, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/lazio.png"},
-    {"team": "Napoli", "country": "Itália - Serie A",               "Overall": 79, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/napoli.png"},
-    {"team": "Milano (AC Milan)", "country": "Itália - Serie A",    "Overall": 81, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/milano.png"},
-    {"team": "Juventus", "country": "Itália - Serie A",             "Overall": 80, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/juventus.png"},
-    {"team": "Roma", "country": "Itália - Serie A",                 "Overall": 80, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/roma.png"},
-    {"team": "Lombardia FC (Inter)", "country": "Itália - Serie A", "Overall": 83, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/inter.png"},
+    {"team": "Atalanta", "country": "Itália - Serie A",             "Overall": 79, "Ataque": 78, "Meio-campo": 78, "Defesa": 78, "image": "imagens/atalanta.png"},
+    {"team": "Lazio", "country": "Itália - Serie A",                "Overall": 79, "Ataque": 80, "Meio-campo": 79, "Defesa": 78, "image": "imagens/lazio.png"},
+    {"team": "Napoli", "country": "Itália - Serie A",               "Overall": 79, "Ataque": 81, "Meio-campo": 79, "Defesa": 79, "image": "imagens/napoli.png"},
+    {"team": "Milano (AC Milan)", "country": "Itália - Serie A",    "Overall": 81, "Ataque": 79, "Meio-campo": 82, "Defesa": 80, "image": "imagens/milano.png"},
+    {"team": "Juventus", "country": "Itália - Serie A",             "Overall": 80, "Ataque": 82, "Meio-campo": 79, "Defesa": 77, "image": "imagens/juventus.png"},
+    {"team": "Roma", "country": "Itália - Serie A",                 "Overall": 80, "Ataque": 84, "Meio-campo": 79, "Defesa": 81, "image": "imagens/roma.png"},
+    {"team": "Lombardia FC (Inter)", "country": "Itália - Serie A", "Overall": 83, "Ataque": 86, "Meio-campo": 83, "Defesa": 83, "image": "imagens/inter.png"},
 
 #bundesliga
-    {"team": "FC Bayern München", "country": "Alemanha - Bundesliga",   "Overall": 84, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/fc-bayern mnchen.png"},
-    {"team": "Bayer 04 Leverkusen", "country": "Alemanha - Bundesliga", "Overall": 83, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/leverkusen.png"},
-    {"team": "Borussia Dortmund", "country": "Alemanha - Bundesliga",   "Overall": 81, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/borussia-dortmund.png"},
-    {"team": "RB Leipzig", "country": "Alemanha - Bundesliga",          "Overall": 80, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/rb-leipzig.png"},
+    {"team": "FC Bayern München", "country": "Alemanha - Bundesliga",   "Overall": 84, "Ataque": 90, "Meio-campo": 83, "Defesa": 82, "image": "imagens/fc-bayern mnchen.png"},
+    {"team": "Bayer 04 Leverkusen", "country": "Alemanha - Bundesliga", "Overall": 83, "Ataque": 82, "Meio-campo": 83, "Defesa": 83, "image": "imagens/leverkusen.png"},
+    {"team": "Borussia Dortmund", "country": "Alemanha - Bundesliga",   "Overall": 81, "Ataque": 80, "Meio-campo": 81, "Defesa": 81, "image": "imagens/borussia-dortmund.png"},
+    {"team": "RB Leipzig", "country": "Alemanha - Bundesliga",          "Overall": 80, "Ataque": 81, "Meio-campo": 79, "Defesa": 80, "image": "imagens/rb-leipzig.png"},
     
 
 #outros
-    {"team": "Galatasaray SK", "country": "Turquia",                "Overall": 79, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/galatasaray.png"},
-    {"team": "Fenerbahçe SK", "country": "Turquia",                 "Overall": 79, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/fenerbahce.png"},
-    {"team": "Paris Saint-Germain", "country": "França - Liga 1",   "Overall": 82, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/psg.png"},
+    {"team": "Galatasaray SK", "country": "Turquia",                "Overall": 79, "Ataque": 82, "Meio-campo": 78, "Defesa": 77, "image": "imagens/galatasaray.png"},
+    {"team": "Fenerbahçe SK", "country": "Turquia",                 "Overall": 79, "Ataque": 81, "Meio-campo": 79, "Defesa": 78, "image": "imagens/fenerbahce.png"},
+    {"team": "Paris Saint-Germain", "country": "França - Liga 1",   "Overall": 82, "Ataque": 81, "Meio-campo": 82, "Defesa": 83, "image": "imagens/psg.png"},
 
 #seleções
-    {"team": "França", "country": "Internacional",      "Overall": 85, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/franca.png"},
-    {"team": "Inglaterra", "country": "Internacional",  "Overall": 84, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/inglaterra.png"},
-    {"team": "Alemanha", "country": "Internacional",    "Overall": 84, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/alemanha.png"},
-    {"team": "Portugal", "country": "Internacional",    "Overall": 84, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/portugal.png"},
-    {"team": "Espanha", "country": "Internacional",     "Overall": 84, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/espanha.png"},
-    {"team": "Netherlands", "country": "Internacional", "Overall": 83, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/netherlands.png"},
-    {"team": "Argentina", "country": "Internacional",   "Overall": 83, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/argentina.png"},
+    {"team": "França", "country": "Internacional",      "Overall": 85, "Ataque": 85, "Meio-campo": 84, "Defesa": 85, "image": "imagens/franca.png"},
+    {"team": "Inglaterra", "country": "Internacional",  "Overall": 84, "Ataque": 87, "Meio-campo": 85, "Defesa": 82, "image": "imagens/inglaterra.png"},
+    {"team": "Alemanha", "country": "Internacional",    "Overall": 84, "Ataque": 79, "Meio-campo": 83, "Defesa": 84, "image": "imagens/alemanha.png"},
+    {"team": "Portugal", "country": "Internacional",    "Overall": 84, "Ataque": 85, "Meio-campo": 84, "Defesa": 83, "image": "imagens/portugal.png"},
+    {"team": "Espanha", "country": "Internacional",     "Overall": 84, "Ataque": 83, "Meio-campo": 83, "Defesa": 83, "image": "imagens/espanha.png"},
+    {"team": "Netherlands", "country": "Internacional", "Overall": 83, "Ataque": 81, "Meio-campo": 83, "Defesa": 84, "image": "imagens/netherlands.png"},
+    {"team": "Argentina", "country": "Internacional",   "Overall": 83, "Ataque": 87, "Meio-campo": 84, "Defesa": 81, "image": "imagens/argentina.png"},
 
 
-    {"team": "Itália", "country": "Internacional", "Overall": 82, "Ataque": "", "Meio-campo": "", "Defesa": "", "image": "imagens/italia.png"}
+    {"team": "Itália", "country": "Internacional", "Overall": 82, "Ataque": 78, "Meio-campo": 82, "Defesa": 81, "image": "imagens/italia.png"}
 
 ]
 
