@@ -12,13 +12,13 @@ data = [
     {"team": "Barcelona", "country": "Espanha - La Liga",               "Overall": 83, "Ataque": 81, "Meio-campo": 81, "Defesa": 82, "image": "imagens/barcelona.png"},
     {"team": "Atletico Madrid", "country": "Espanha - La Liga",         "Overall": 82, "Ataque": 84, "Meio-campo": 81, "Defesa": 81, "image": "imagens/atletico-de-madrid.png"},
     {"team": "Athletic Club Bilbao", "country": "Espanha - La Liga",    "Overall": 80, "Ataque": 79, "Meio-campo": 80, "Defesa": 79, "image": "imagens/athletic-club-bilbao.png"},
-    {"team": "Girona FC", "country": "Espanha - La Liga",               "Overall": 79, "Ataque": 75, "Meio-campo": 79, "Defesa": 79, "image": "imagens/girona.png"},
+#    {"team": "Girona FC", "country": "Espanha - La Liga",               "Overall": 79, "Ataque": 75, "Meio-campo": 79, "Defesa": 79, "image": "imagens/girona.png"},
 
 #premier league
     {"team": "Newcastle", "country": "Inglaterra - Premier League",         "Overall": 80, "Ataque": 81, "Meio-campo": 82, "Defesa": 79, "image": "imagens/newcastle.png"},
     {"team": "Tottenham", "country": "Inglaterra - Premier League",         "Overall": 81, "Ataque": 82, "Meio-campo": 80, "Defesa": 78, "image": "imagens/tottenham.png"},
     {"team": "Arsenal", "country": "Inglaterra - Premier League",           "Overall": 84, "Ataque": 84, "Meio-campo": 85, "Defesa": 82, "image": "imagens/arsenal.png"},
-    {"team": "West Ham", "country": "Inglaterra - Premier League",          "Overall": 79, "Ataque": 81, "Meio-campo": 79, "Defesa": 78, "image": "imagens/west-ham.png"},
+#    {"team": "West Ham", "country": "Inglaterra - Premier League",          "Overall": 79, "Ataque": 81, "Meio-campo": 79, "Defesa": 78, "image": "imagens/west-ham.png"},
     {"team": "Manchester United", "country": "Inglaterra - Premier League", "Overall": 80, "Ataque": 80, "Meio-campo": 80, "Defesa": 81, "image": "imagens/manchester-united.png"},
     {"team": "Chelsea", "country": "Inglaterra - Premier League",           "Overall": 81, "Ataque": 81, "Meio-campo": 82, "Defesa": 79, "image": "imagens/chelsea.png"},
     {"team": "Manchester City", "country": "Inglaterra - Premier League",   "Overall": 85, "Ataque": 84, "Meio-campo": 86, "Defesa": 83, "image": "imagens/manchester-city.png"},
@@ -26,9 +26,9 @@ data = [
     {"team": "Aston Villa", "country": "Inglaterra - Premier League",       "Overall": 80, "Ataque": 84, "Meio-campo": 80, "Defesa": 79, "image": "imagens/aston-villa.png"},
 
 #seria a
-    {"team": "Atalanta", "country": "Itália - Serie A",             "Overall": 79, "Ataque": 78, "Meio-campo": 78, "Defesa": 78, "image": "imagens/atalanta.png"},
-    {"team": "Lazio", "country": "Itália - Serie A",                "Overall": 79, "Ataque": 80, "Meio-campo": 79, "Defesa": 78, "image": "imagens/lazio.png"},
-    {"team": "Napoli", "country": "Itália - Serie A",               "Overall": 79, "Ataque": 81, "Meio-campo": 79, "Defesa": 79, "image": "imagens/napoli.png"},
+#    {"team": "Atalanta", "country": "Itália - Serie A",             "Overall": 79, "Ataque": 78, "Meio-campo": 78, "Defesa": 78, "image": "imagens/atalanta.png"},
+#    {"team": "Lazio", "country": "Itália - Serie A",                "Overall": 79, "Ataque": 80, "Meio-campo": 79, "Defesa": 78, "image": "imagens/lazio.png"},
+ #   {"team": "Napoli", "country": "Itália - Serie A",               "Overall": 79, "Ataque": 81, "Meio-campo": 79, "Defesa": 79, "image": "imagens/napoli.png"},
     {"team": "Milano (AC Milan)", "country": "Itália - Serie A",    "Overall": 81, "Ataque": 79, "Meio-campo": 82, "Defesa": 80, "image": "imagens/milano.png"},
     {"team": "Juventus", "country": "Itália - Serie A",             "Overall": 80, "Ataque": 82, "Meio-campo": 79, "Defesa": 77, "image": "imagens/juventus.png"},
     {"team": "Roma", "country": "Itália - Serie A",                 "Overall": 80, "Ataque": 84, "Meio-campo": 79, "Defesa": 81, "image": "imagens/roma.png"},
@@ -42,8 +42,8 @@ data = [
     
 
 #outros
-    {"team": "Galatasaray SK", "country": "Turquia",                "Overall": 79, "Ataque": 82, "Meio-campo": 78, "Defesa": 77, "image": "imagens/galatasaray.png"},
-    {"team": "Fenerbahçe SK", "country": "Turquia",                 "Overall": 79, "Ataque": 81, "Meio-campo": 79, "Defesa": 78, "image": "imagens/fenerbahce.png"},
+#    {"team": "Galatasaray SK", "country": "Turquia",                "Overall": 79, "Ataque": 82, "Meio-campo": 78, "Defesa": 77, "image": "imagens/galatasaray.png"},
+#    {"team": "Fenerbahçe SK", "country": "Turquia",                 "Overall": 79, "Ataque": 81, "Meio-campo": 79, "Defesa": 78, "image": "imagens/fenerbahce.png"},
     {"team": "Paris Saint-Germain", "country": "França - Liga 1",   "Overall": 82, "Ataque": 81, "Meio-campo": 82, "Defesa": 83, "image": "imagens/psg.png"},
 
 #Internacional
