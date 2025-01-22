@@ -7,7 +7,7 @@ Com foco em manter o equilíbrio competitivo e a variedade de clubes e seleçõe
 
 ## Regras de Seleção de Times
 1. **Melhores clubes e seleções do EA FC 25**:
-   - Apenas times com **overall igual ou superior a 79** são considerados.
+   - Apenas times com **overall igual ou superior a 80** são considerados.
 
 2. **Variedade garantida**:
    - Os mesmos times **não será repetido durante 5 gerações** de partidas.
