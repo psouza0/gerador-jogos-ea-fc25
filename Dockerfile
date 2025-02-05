@@ -1,10 +1,9 @@
-FROM python:latest
+FROM python:alpine3.21
 
 WORKDIR /app
 
 COPY . /app
 
-RUN apt-get update && apt-get install -y build-essential python3-dev
 RUN pip install -r requirements.txt
 
 EXPOSE 5000
