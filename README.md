@@ -32,10 +32,7 @@ Com foco em manter o equilíbrio competitivo e a variedade de clubes e seleçõe
 3. Aproveite partidas equilibradas e divertidas no EA FC 25!
 
 
-## Licença
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
-
-## Contato
+## Contato com o Author
 Caso tenha dúvidas ou sugestões, entre em contato:
 - **Email**: [paulogeraldols@gmail.com]
 - **GitHub**: [psouza0]
