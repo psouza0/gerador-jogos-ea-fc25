@@ -54,8 +54,6 @@ data = [
     {"team": "Espanha", "country": "Internacional",     "Overall": 84, "Ataque": 83, "Meio-campo": 83, "Defesa": 83, "image": "imagens/espanha.png"},
     {"team": "Netherlands", "country": "Internacional", "Overall": 83, "Ataque": 81, "Meio-campo": 83, "Defesa": 84, "image": "imagens/netherlands.png"},
     {"team": "Argentina", "country": "Internacional",   "Overall": 83, "Ataque": 87, "Meio-campo": 84, "Defesa": 81, "image": "imagens/argentina.png"},
-
-
     {"team": "Itália", "country": "Internacional", "Overall": 82, "Ataque": 78, "Meio-campo": 82, "Defesa": 81, "image": "imagens/italia.png"}
 
 ]
@@ -80,4 +78,4 @@ def index():
     return render_template('index.html', team1=team1, team2=team2)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=False)
