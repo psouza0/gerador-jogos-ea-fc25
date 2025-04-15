@@ -112,77 +112,85 @@
 <body>
     <div class="container text-center py-5">
 <!-- <h1 class="mb-4">Gerador de Partidas de Futebol</h1> -->
-        <div class="row justify-content-center mb-4">
-            
-            <!-- Time 1 -->
-            <div class="col-md-4">
-                <h4 class="player-label p1">JOGADOR 1</h4>
-                <div class="team-card">
-                    <img src="{{ url_for('static', filename=team1['image'].split('/')[-1]) }}" alt="{{ team1.team }}">
-                    <h5>{{ team1.team }}</h5>
-                    <p>{{ team1.country }}</p>
-                    <div class="stats-container">
-                        {% if team1.Overall %}
-                        <div class="stats-box-wrapper">
-                            <div class="stats-title">OVR</div>
-                            <div class="stats-box">{{ team1.Overall }}</div>
-                        </div>
-                        {% endif %}
-                        {% if team1.Ataque %}
-                        <div class="stats-box-wrapper">
-                            <div class="stats-title">ATA</div>
-                            <div class="stats-box">{{ team1.Ataque }}</div>
-                        </div>
-                        {% endif %}
-                        {% if team1['Meio-campo'] %}
-                        <div class="stats-box-wrapper">
-                            <div class="stats-title">MEI</div>
-                            <div class="stats-box">{{ team1['Meio-campo'] }}</div>
-                        </div>                        {% endif %}
-                        {% if team1.Defesa %}
-                        <div class="stats-box-wrapper">
-                            <div class="stats-title">DEF</div>
-                            <div class="stats-box">{{ team1.Defesa }}</div>
-                        </div>                     {% endif %}
-                    </div>
+{% if mostrar_times %}
+<div class="row justify-content-center mb-4">
+    <!-- Time 1 -->
+    <div class="col-md-4">
+        <h4 class="player-label p1">JOGADOR 1</h4>
+        <div class="team-card">
+            <img src="{{ url_for('static', filename=team1['image'].split('/')[-1]) }}" alt="{{ team1.team }}">
+            <h5>{{ team1.team }}</h5>
+            <p>{{ team1.country }}</p>
+            <div class="stats-container">
+                {% if team1.Overall %}
+                <div class="stats-box-wrapper">
+                    <div class="stats-title">OVR</div>
+                    <div class="stats-box">{{ team1.Overall }}</div>
                 </div>
-            </div>
-
-            <!-- Time 2 -->
-            <div class="col-md-4">
-                <h4 class="player-label p2">JOGADOR 2</h4>
-                <div class="team-card">
-                    <img src="{{ url_for('static', filename=team2['image'].split('/')[-1]) }}" alt="{{ team2.team }}">
-                    <h5>{{ team2.team }}</h5>
-                    <p>{{ team2.country }}</p>
-                    <div class="stats-container">
-                        {% if team2.Overall %}
-                        <div class="stats-box-wrapper">
-                            <div class="stats-title">OVR</div>
-                            <div class="stats-box">{{ team2.Overall }}</div>
-                        </div>                        {% endif %}
-                        {% if team2.Ataque %}
-                        <div class="stats-box-wrapper">
-                            <div class="stats-title">ATA</div>
-                            <div class="stats-box">{{ team2.Ataque }}</div>
-                        </div>                        {% endif %}
-                        {% if team2['Meio-campo'] %}
-                        <div class="stats-box-wrapper">
-                            <div class="stats-title">MEI</div>
-                            <div class="stats-box">{{ team2['Meio-campo'] }}</div>
-                        </div>                        {% endif %}
-                        {% if team2.Defesa %}
-                        <div class="stats-box-wrapper">
-                            <div class="stats-title">DEF</div>
-                            <div class="stats-box">{{ team2.Defesa }}</div>
-                        </div>                        {% endif %}
-                    </div>
+                {% endif %}
+                {% if team1.Ataque %}
+                <div class="stats-box-wrapper">
+                    <div class="stats-title">ATA</div>
+                    <div class="stats-box">{{ team1.Ataque }}</div>
                 </div>
+                {% endif %}
+                {% if team1['Meio-campo'] %}
+                <div class="stats-box-wrapper">
+                    <div class="stats-title">MEI</div>
+                    <div class="stats-box">{{ team1['Meio-campo'] }}</div>
+                </div>
+                {% endif %}
+                {% if team1.Defesa %}
+                <div class="stats-box-wrapper">
+                    <div class="stats-title">DEF</div>
+                    <div class="stats-box">{{ team1.Defesa }}</div>
+                </div>
+                {% endif %}
             </div>
-
         </div>
-        <button class="btn btn-primary" onclick="window.location.reload();">Gerar Nova Partida</button>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Time 2 -->
+    <div class="col-md-4">
+        <h4 class="player-label p2">JOGADOR 2</h4>
+        <div class="team-card">
+            <img src="{{ url_for('static', filename=team2['image'].split('/')[-1]) }}" alt="{{ team2.team }}">
+            <h5>{{ team2.team }}</h5>
+            <p>{{ team2.country }}</p>
+            <div class="stats-container">
+                {% if team2.Overall %}
+                <div class="stats-box-wrapper">
+                    <div class="stats-title">OVR</div>
+                    <div class="stats-box">{{ team2.Overall }}</div>
+                </div>
+                {% endif %}
+                {% if team2.Ataque %}
+                <div class="stats-box-wrapper">
+                    <div class="stats-title">ATA</div>
+                    <div class="stats-box">{{ team2.Ataque }}</div>
+                </div>
+                {% endif %}
+                {% if team2['Meio-campo'] %}
+                <div class="stats-box-wrapper">
+                    <div class="stats-title">MEI</div>
+                    <div class="stats-box">{{ team2['Meio-campo'] }}</div>
+                </div>
+                {% endif %}
+                {% if team2.Defesa %}
+                <div class="stats-box-wrapper">
+                    <div class="stats-title">DEF</div>
+                    <div class="stats-box">{{ team2.Defesa }}</div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<a href="{{ url_for('gerar') }}" class="btn btn-primary">Gerar Nova Partida</a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+        

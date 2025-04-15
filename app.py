@@ -1,9 +1,12 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, session, redirect
 import pandas as pd
 import random
 from collections import deque
+import os
 
 app = Flask(__name__)
+app.secret_key = os.urandom(24)
+
 
 data = [
 
@@ -74,8 +77,17 @@ def generate_match():
 
 @app.route('/')
 def index():
+    team1 = session.pop('team1', None)
+    team2 = session.pop('team2', None)
+    mostrar_times = team1 is not None and team2 is not None
+    return render_template('index.html', team1=team1, team2=team2, mostrar_times=mostrar_times)
+
+@app.route('/gerar')
+def gerar():
     team1, team2 = generate_match()
-    return render_template('index.html', team1=team1, team2=team2)
+    session['team1'] = team1
+    session['team2'] = team2
+    return redirect(url_for('index'))
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=False)
